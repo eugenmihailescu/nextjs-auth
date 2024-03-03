@@ -33,7 +33,7 @@ export const EmailVerificationForm = () => {
         setSuccess(message.success);
       }
       if (message.error) {
-        setSuccess(message.error);
+        setError(message.error);
       }
     } catch (err: any) {
       setError(err.message);
