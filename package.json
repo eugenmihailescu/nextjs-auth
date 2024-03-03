@@ -1,7 +1,20 @@
 {
-  "name": "lsbolagen-cpanel",
+  "name": "nextjs-auth",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Eugen Mihailescu",
+    "email": "eugen.mihailescu@protonmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugenmihailescu/nextjs-auth"
+  },
+  "bugs": {
+    "url": "https://github.com/eugenmihailescu/nextjs-auth/issues",
+    "email": "eugen.mihailescu@protonmail.com"
+  },
   "scripts": {
     "dev": "dotenv -e .env.development -- npx next dev",
     "build": "dotenv -e .env.production -- npx next build",
