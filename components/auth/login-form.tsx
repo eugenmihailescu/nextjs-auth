@@ -104,27 +104,32 @@ export const LoginForm = ({
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="space-y-4">
             {twoFactor && (
-              <FormField
-                control={form.control}
-                name="code"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Two-Factor Code (2FA)</FormLabel>
-                    <FormControl>
-                      <Input
-                        {...field}
-                        placeholder="123456"
-                        type="number"
-                        min={100_000}
-                        max={999_999}
-                        disabled={isPending}
-                        className="appearance-none"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              <>
+                <FormField
+                  control={form.control}
+                  name="code"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Two-Factor Code (2FA)</FormLabel>
+                      <FormControl>
+                        <Input
+                          {...field}
+                          placeholder="123456"
+                          type="number"
+                          min={100_000}
+                          max={999_999}
+                          disabled={isPending}
+                          className="appearance-none"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <span className="text-xs text-muted-foreground">
+                  Confirm the 2FA code we've sent you by email
+                </span>
+              </>
             )}
             {!twoFactor && (
               <>
