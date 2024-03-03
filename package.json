@@ -10,7 +10,8 @@
     "prisma-dev": "dotenv -e .env.development -- npx prisma migrate dev",
     "prisma-reset": "dotenv -e .env.development -- npx prisma migrate reset",
     "prisma-deploy": "dotenv -e .env.production -- npx prisma migrate deploy",
-    "prisma-studio": "dotenv -e .env.development -- npx prisma studio"
+    "prisma-studio": "dotenv -e .env.development -- npx prisma studio",
+    "postinstall": "dotenv -e .env.production -- npx prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^1.4.0",
