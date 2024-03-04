@@ -29,7 +29,7 @@ const LoginButton = ({ children, mode /* ,asChild */ }: LoginButtonProps) => {
       className="cursor-pointer"
       onClick={onClick}
       onKeyDown={(e) => {
-        if (e.code === 'Enter') {
+        if (['Enter', 'Backspace'].includes(e.code)) {
           onClick();
         }
       }}
