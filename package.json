@@ -1,11 +1,13 @@
 {
   "name": "nextjs-auth",
   "version": "0.1.0",
+  "description": "Next-Auth demo",
   "private": false,
-  "license": "MIT",
+  "license": "ISC",
   "author": {
     "name": "Eugen Mihailescu",
-    "email": "eugen.mihailescu@protonmail.com"
+    "email": "eugen.mihailescu@protonmail.com",
+    "url": "https://www.linkedin.com/in/eugenmihailescu"
   },
   "repository": {
     "type": "git",
@@ -81,5 +83,8 @@
     "prisma": "^5.10.2",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
