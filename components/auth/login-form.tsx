@@ -23,6 +23,7 @@ import { FormErrorAlert } from '../form-error';
 import { FormSuccessAlert } from '../form-success';
 import { FormWarningAlert } from '../form-warning';
 import { Button } from '../ui/button';
+import { EmailInput } from '../ui/email-input';
 import { Input } from '../ui/input';
 import { PasswordInput } from '../ui/password-input';
 import CardWrapper from './card-wrapper';
@@ -140,10 +141,9 @@ export const LoginForm = ({
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input
+                        <EmailInput
                           {...field}
                           placeholder="john.doe@example.com"
-                          type="email"
                           disabled={isPending}
                         />
                       </FormControl>

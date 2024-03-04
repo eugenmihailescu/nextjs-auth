@@ -19,7 +19,7 @@ import * as z from 'zod';
 import { FormErrorAlert } from '../form-error';
 import { FormSuccessAlert } from '../form-success';
 import { Button } from '../ui/button';
-import { Input } from '../ui/input';
+import { EmailInput } from '../ui/email-input';
 import CardWrapper from './card-wrapper';
 
 /**
@@ -69,10 +69,9 @@ export const ForgotPasswordForm = () => {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input
+                    <EmailInput
                       {...field}
                       placeholder="john.doe@example.com"
-                      type="email"
                       disabled={isPending}
                     />
                   </FormControl>
